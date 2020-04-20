@@ -32,7 +32,7 @@ const queries = {
 
 					return result;
 				})
-				.sort((a, b) => b.cost - a.cost);
+				.sort((a,b) => ('' + a.name).localeCompare(b.name));
 		},
 		Fish: (parent: any, args: FishArgs) => {
 			return fishes
@@ -51,7 +51,7 @@ const queries = {
 
 					return result;
 				})
-				.sort((a, b) => b.cost - a.cost);
+				.sort((a,b) => ('' + a.name).localeCompare(b.name));
 		},
 	},
 };

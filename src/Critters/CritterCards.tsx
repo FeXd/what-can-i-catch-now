@@ -35,18 +35,17 @@ function CritterCards({ table }: TableProps) {
 
 	return (
 		<Box borderRadius="15px" overflow="hidden" width="100%">
+			<div className="critterCardWrapper">
       {rows.map((row: any) => {
           console.log(row);
 						return (
               <div className="critterCard">
-                <div className="critterCardTop">{row.original.cost}</div>
+                <div className="critterCardHeader">{row.original.name.substring(0,1)} {row.original.cost}</div>
                 <div className="critterCardImage"><img alt={row.original.name} src={row.original.image}/></div>
-                <div className="critterCardBottom">
-									{row.original.size} - {row.original.name.substring(0,3)}
-                </div>
               </div>
 						);
 					})}
+				</div>
 		</Box>
 	);
 }

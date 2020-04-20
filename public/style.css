@@ -1,17 +1,17 @@
+.critterCardWrapper {
+  text-align: center;
+}
 .critterCard {
-  float: left;
   background-color: rgb(199, 191, 153);
   border-radius: 10px;
   margin: 5px;
-  padding: 5px;
+  padding: 5px 5px 0px 5px;
   overflow: hidden;
+  display: inline-block;
 }
 .critterCardImage {
   text-align:center
 }
-.critterCardTop {
-  text-align: center
-}
-.critterCardBottom {
-  text-align: center
+.critterCardHeader {
+  text-align: left
 }
