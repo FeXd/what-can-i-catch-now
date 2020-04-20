@@ -4,7 +4,7 @@ import gql from 'graphql-tag';
 import dayjs from 'dayjs';
 import { useTable, useSortBy } from 'react-table';
 import { useHemisphere } from '../HemisphereContext';
-import CritterTable from './CritterTable';
+import CritterCards from './CritterCards';
 import CritterImg from './CritterImg';
 import { Text } from '../SS';
 
@@ -86,7 +86,7 @@ function Fish() {
 		return <Text my={3}>Error :(</Text>;
 	}
 
-	return <CritterTable table={table} />;
+	return <CritterCards table={table} />;
 }
 
 export default Fish;

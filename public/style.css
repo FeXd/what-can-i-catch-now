@@ -1,0 +1,17 @@
+.critterCard {
+  float: left;
+  background-color: rgb(199, 191, 153);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  overflow: hidden;
+}
+.critterCardImage {
+  text-align:center
+}
+.critterCardTop {
+  text-align: center
+}
+.critterCardBottom {
+  text-align: center
+}
